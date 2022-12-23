@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h2>Тестовое задание</h2>
       <Routes>
-        <Route path="/" element={<Home/> }/>
+        <Route path="/*" element={<Home/> }/>
         <Route path="/profile" element={<Profile/> }/>
       </Routes>
     </div>
