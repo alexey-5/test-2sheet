@@ -13,7 +13,7 @@ const Home = () => {
  }
 
    return (
-      <div>
+      <div >
          <h3>Главная страница</h3>
          <form>
             <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Введите логин" />

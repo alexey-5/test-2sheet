@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.App {
+  text-align: center;
+}
+
+button {
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: rgb(194, 245, 228);
+
+
+}
+
+.menu_1 label {
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: rgb(194, 245, 228);
+  position: relative;
+  display: block;
+}
+
+.menu_2 {
+  margin: 15px;
+  margin-top: 15px;
+}
+
+input {
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.wrapper {
+  border: 2px solid rgb(82, 83, 185);
+  border-radius: 15px;
+  margin: 20px;
+  height: 93vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_1 {
+  position: relative;
+  font-size: 17px;
+}
+
+.wrap_2 {
+  position: relative;
+}
+
+.items {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(194, 245, 228);
+  transition: all 1s;
+  visibility: visible;
+  z-index: -1;
+}
+
+.menu_up {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(194, 245, 228);
+  transition: all 1s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+.items_2 {
+  position: absolute;
+  left: 19px;
+  border: 2px solid rgb(219, 167, 167);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(194, 245, 228);
+  transition: all 1s;
+  z-index: -1;
+  visibility: hidden;
+  top: 0px;
+  opacity: 0;
+
+}
+
+#check {
+  display: none;
+
+  &:checked~.items_2 {
+    visibility: visible;
+    top: 70px;
+    opacity: 1;
+  }
+}
